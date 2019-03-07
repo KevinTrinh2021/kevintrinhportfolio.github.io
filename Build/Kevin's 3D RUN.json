@@ -1,0 +1,13 @@
+{
+"companyName": "Kevin Trinh",
+"productName": "Kevin Trinh's 3D RUN Game Project #1",
+"dataUrl": "Kevin's 3D RUN.data.unityweb",
+"wasmCodeUrl": "Kevin's 3D RUN.wasm.code.unityweb",
+"wasmFrameworkUrl": "Kevin's 3D RUN.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
