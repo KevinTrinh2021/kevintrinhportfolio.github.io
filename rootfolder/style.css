@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+/*fonts link above, dont remove ittttttt*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:link {
+  color: white;
+}
+
+/*nav bar starts hereeeeeee------*/
+
+a {
+  /* color: white; */
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+header .logo {
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo {
+  margin-left: -80px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+header nav ul li.sub-menu:before {
+  content: '\f078';
+  font-family: fontAwesome;
+  position: absolute;
+  line-height: 60px;
+  color: #fff;
+  right: 1px;
+}
+
+header nav ul li.active.sub-menu:before {
+  content: '\f077';
+}
+
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: #333;
+  display: none
+}
+
+header nav ul li.active ul {
+  /* use li: hover instead */
+  display: block;
+}
+
+header nav ul li ul li {
+  display: block;
+  width: 300px;
+}
+
+header nav ul li a {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 18px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+  background: #FFA200;
+}
+
+header nav ul li a.active {
+  background: #2196f3;
+}
+
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none
+}
+
+@media (max-width: 985px) {
+  header nav ul li.sub-menu:before {
+    padding: 0px 45px 0px;
+  }
+  .index-section1 article {
+    display: none;
+  }
+  .logo {
+    margin-left: 0px;
+  }
+  header {
+    padding: 0 20px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  header nav {
+    /* use display none or left:-100% to hide the nav  */
+    /* display: none; */
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    transition: 0.5s;
+  }
+  header nav.active {
+    left: 0;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li a {
+    border-bottom: 0.9px solid rgba(0, 0, 0, .2);
+  }
+  header nav ul li.active ul {
+    position: relative;
+    background: #003e6f;
+  }
+  header nav ul li ul li {
+    width: 100%;
+  }
+}
+
+/*index.html non navigator stuff page here----+*/
+
+.index-section1 {
+  display: none;
+}
+
+.index-body {
+  background-color: #232323;
+  background-image: url(img/gif7.gif);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.index-section1 article {
+  padding-top: 15%;
+  color: white;
+}
+
+#indexbox {
+  background: rgba(0, 0, 0, 0.3);
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 65px 20px;
+  box-shadow: 10px 10px 28px 6px rgba(0,0,0,0.95);
+}
+
+.index-section1 article h2 {
+  text-decoration: none;
+  font-size: 55px;
+  word-spacing: 10px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+.index-section1 article p {
+  text-align: center;
+  word-spacing: 3px;
+}
+/*about me section*/
+
+.about-me-section {
+  background: white;
+  padding-bottom: 70px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.img-info {
+  width: 100%;
+  padding-top: 0px;
+}
+
+.img-info h2 {
+  padding: 30px 30px 0px;
+  font-family: arial;
+  font-size: 50px;
+  color: #232323;
+  line-height: 35px;
+}
+
+.img-info p {
+  padding: 30px 30px 20px;
+  font-family: arial;
+}
+
+.img-me {
+  width: 100%;
+}
+
+/*education non media goes here, media then goes below :)---------*/
+
+.education-section {
+  background: #FFA200;
+}
+
+.education-section article h2 {
+  font-size: 50px;
+  padding: 20px 20px 10px;
+}
+
+.education-years {
+  padding: 20px 20px 0px;
+  font-size: 40px;
+}
+
+#uh-png {
+  width: 100%
+}
+
+#schs-png {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.education-p {
+  line-height: 24px;
+  padding: 0px 20px 10px;
+  text-align: left;
+}
+
+.education-p a {
+  color: #2C3E50;
+  text-decoration: underline;
+}
+
+.education-p a:hover {
+  color: #232323;
+  text-decoration: none;
+}
+
+.development-section1 h2 {
+  font-size: 30px;
+  padding: 80px 50px 10px;
+}
+
+.development-section1 article p {
+  font-size: 22px;
+  padding: 30px 50px 30px;
+}
+
+#programming-img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.gamedev-info h2 {
+  font-size: 30px;
+  padding: 80px 30px 10px;
+}
+
+.gamedev-info p {
+  font-size: 20px;
+  padding: 20px;
+}
+
+#unity-img {
+  width: 100%;
+padding: 20px;
+}
+
+.gamedevsec1 h2 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.game-links {
+  background: #FFA200;
+  padding: 40px;
+  outline: 2px solid #232323;
+  outline-offset: -20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.game-links a:hover {
+  color: #232323;
+}
+
+.ci-info-section {
+  padding-top: 100px;
+}
+
+.ci-info-section h2 {
+  font-size: 70px;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.ci-info-section p {
+  font-size: 30px;
+  padding: 0px 10% 20px;
+}
+
+#ci-article-1 {
+  text-align: center;
+  background: #232323;
+  font-size: 50px;
+  padding: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#ci-article-2 {
+  text-align: center;
+  background: #232323;
+  font-size: 50px;
+  padding: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#ci-article-3 {
+  text-align: center;
+  background: #232323;
+  font-size: 50px;
+  padding: 40px 0px 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#ci-article-1:hover {
+  background: #FFA200;
+}
+
+#ci-article-2:hover {
+  background: #FFA200;
+}
+
+#ci-article-3:hover {
+  background: #FFA200;
+}
+
+.automata-section article h2 {
+  padding: 80px 30px 0px;
+  line-height: 30px;
+}
+
+.automata-section article p {
+  padding: 10px 30px 30px;
+}
+
+#automata-img {
+  width: 100%;
+}
+
+#automata-img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.miscframe {
+  width: 100%;
+  height: 800px;
+}
+
+.dep-section article h2 {
+  padding: 80px 30px 0px;
+  font-size: 22px;
+}
+
+.dep-section article p {
+  padding: 10px 30px 0px;
+  font-size: 16px;
+}
+
+.dep-section img {
+  width: 100%;
+  padding: 20px 0 20px;
+}
+
+.dep-section center {
+  padding-bottom: 40px;
+}
+
+.reverse-article h2 {
+  font-size: 20px;
+  padding: 80px 30px 0px;
+}
+
+.reverse-article p {
+  font-size: 16px;
+  padding: 10px 30px 20px;
+}
+
+.reverse-article img {
+  width: 100%;
+  height: auto;
+}
+
+.reverse-article center iframe {
+  padding: 20px 0 40px;
+}
+
+.toytrain-article h2 {
+  padding: 80px 30px 0px;
+  font-size: 26px;
+}
+
+.toytrain-article p {
+  font-size: 18px;
+  padding: 10px 30px 10px;
+}
+
+#archstyle-iframe {
+  padding: 0 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media files below only-------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  .resources-sec1 h2 {
+    padding-top: 70px;
+    font-size: 50px;
+  }
+  .resources-sec1 p {
+    font-size: 20px;
+  }
+  .resources-sec1 img {
+    padding-top: 30px;
+  }
+  .resources-sec1 img:hover {
+    width: 26%;
+    height: 26%;
+  }
+  #charrette-iframe {
+    width: 760px;
+    height: 569px;
+  }
+  .toytrain-article h2 {
+    font-size: 30px;
+  }
+
+  .toytrain-article p {
+    font-size: 22px;
+    padding: 10px 30px 20px;
+  }
+  .reverse-article h2 {
+    font-size: 22px;
+    padding: 80px 30px 0px;
+  }
+
+  .reverse-article p {
+    font-size: 18px;
+    padding: 10px 30px 20px;
+  }
+
+  .reverse-article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dep-section article h2 {
+    font-size: 24px;
+  }
+
+  .dep-section article p {
+    font-size: 20px;
+  }
+
+  .dep-section center {
+    padding-bottom: 60px;
+  }
+  .miscframe {
+    width: 700px;
+    height: 600px;
+  }
+  .automata-section article h2 {
+    padding: 70px 30px 20px;
+    font-size: 34px;
+  }
+
+  .automata-section article p {
+    font-size: 24px;
+    color: white;
+    background-color: #232323;
+  }
+
+  .automata-section section {
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #232323;
+  }
+
+  .automata-section {
+    padding: 30px;
+  }
+  #automata-img2 {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .gamedev-info h2 {
+    margin-left: 25px;
+  }
+  .gamedev-info p {
+    background: #232323;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .development-section1 article p {
+    color: white;
+    background: #232323;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .index-section1 {
+    display: block;
+  }
+
+
+  .wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .img-info h2 {
+    padding: 20px 0px 0px;
+  }
+
+  .img-info p {
+    padding: 10px 10px 10px;
+    font-size: 18px;
+    color: white;
+    line-height: 24px;
+    background: #232323;
+  }
+  .img-me {
+    padding-top: 60px;
+  }
+  .education-section article p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #toytrain-p-background {
+    padding: 0 15% 20px;
+  }
+  .toytrain-article h2 {
+    padding: 80px 15% 0px;
+    font-size: 30px;
+  }
+
+  .toytrain-article p {
+    color: white;
+    font-size: 22px;
+    padding: 20px 30px 20px;
+    background: #232323;
+    outline: 2px solid #FFA200;
+    outline-offset: -15px;
+  }
+  .reverse-article h2 {
+    font-size: 28px;
+    padding: 80px 15% 0px;
+  }
+
+  .reverse-p-background {
+    padding: 0 15% 20px;
+  }
+
+  .reverse-article p {
+    background: #232323;
+    color: white;
+    font-size: 20px;
+    padding: 20px 30px 20px;
+    outline: 2px solid #FFA200;
+    outline-offset: -15px;
+  }
+
+  .reverse-article img {
+    width: auto;
+    height: auto;
+  }
+
+  .dep-section article h2 {
+    padding: 80px 15% 0px;
+    font-size: 22px;
+  }
+
+  #dep-p-background {
+    padding: 10px 15% 10px;
+  }
+
+  .dep-section article p {
+    background: #232323;
+    padding: 40px 60px;
+    font-size: 16px;
+    color: white;
+    outline: 2px solid #FFA200;
+    outline-offset: -30px;
+  }
+
+  .dep-section img {
+    width: 855px;
+    height: 490px;
+    padding: 20px 0 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dep-section center {
+    padding-bottom: 60px;
+  }
+  .education-section article h2 {
+    font-size: 50px;
+    padding: 20px 120px 10px;
+  }
+
+  .education-years {
+    padding: 20px 20px 0px 150px;
+    font-size: 40px;
+  }
+
+  #uh-png {
+    width: 300px;
+    height: 300px;
+  }
+
+  #schs-png {
+    width: 400px;
+    height: 160px;
+  }
+
+  .education-p {
+    line-height: 24px;
+    padding: 40px 40px 40px;
+    text-align: left;
+    color: white;
+    background: #232323;
+    font-size: 22px;
+    outline: 2px solid #FFA200;
+    outline-offset: -20px;
+  }
+
+  .education-years-section {
+    padding: 0px 150px 50px;
+  }
+
+  .education-section article {
+    padding: 0px 150px 30px;
+  }
+
+  .education-p a {
+    color: #AED6F1;
+    text-decoration: underline;
+  }
+
+  .education-p a:hover {
+    color: #EAF2F8;
+    text-decoration: none;
+  }
+
+  .automata-section article h2 {
+    padding: 70px 10% 20px;
+    font-size: 48px;
+  }
+
+  .automata-section article p {
+    font-size: 28px;
+  }
+
+  .automata-section section {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+    outline: 2px solid #FFA200;
+    outline-offset: -25px;
+  }
+
+  .automata-img-section {
+    background: #232323;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+  }
+
+  #automata-img {
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #automata-img2 {
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10%;
+  }
+  .ci-info-section {
+    padding-top: 100px;
+  }
+
+  .ci-info-section h2 {
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .ci-info-section p {
+    font-size: 28px;
+    color: white;
+    padding: 25px 25px 25px;
+    background: #232323;
+    outline: 2px solid #FFA200;
+    outline-offset: -15px;
+  }
+
+  #ci-p {
+    padding: 0px 20% 100px;
+  }
+
+  #ci-article-1 {
+    font-size: 35px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px 30px 20px;
+  }
+
+  #ci-article-2 {
+    font-size: 35px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px 30px 20px;
+  }
+
+  #ci-article-3 {
+    font-size: 35px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px 30px 20px;
+  }
+  #unity-img {
+    width: 720px;
+    height: 300px;
+  }
+  .game-links a {
+    font-size: 24px;
+  }
+  .game-links {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .gamedev-info h2 {
+    margin-left: 35px;
+  }
+  .gamedev-info p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .development-section1 article p {
+    color: white;
+    outline: 2px solid #FFA200;
+    outline-offset: -15px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .wrapper {
+    width: 1000px;
+  }
+  .img-info {
+    width: 50%;
+    float: right;
+  }
+  .img-me {
+    padding-top: 55px;
+    padding-right: 0px;
+    width: 50%;
+    float: left;
+  }
+  .img-info h2 {
+    padding: 20px 0px 0px 80px;
+  }
+
+  .img-info p {
+    padding: 30px 40px 40px 40px;
+    outline: 2px solid #FFA200;
+    outline-offset: -20px;
+  }
+}
+
+/*no body codes down here------------------+*/
+
+
+
+
+
+
+
+/*only footer stuff goes below -------------------------------*/
+
+footer {
+	background: #232323;
+	color: #fff;
+	text-align: left;
+  padding: 5em 0;
+}
+
+footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:link {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #D8D8D8;
+}
+
+.col-3 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+}
+
+.col-1 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer strong {
+  text-decoration: none;
+}
+
+/* collum system for footer ----------*/
+/*powel stuff col system here...*/
+
+.unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.container {
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+/* Column system of the footer*/
+
+[class^=col-] {
+	width: 100%;
+	margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+	margin-top: 0;
+}
+
+.col-1 {
+	width: 33.333334%;
+	float: left;
+}
+
+
+@media (min-width: 40rem) {
+
+	[class^=col-] {
+		float: left;
+		padding: 0 .5em;
+		margin-top: 0;
+	}
+
+	[class^=col-]:first-child {
+		padding-left: 0;
+	}
+
+	[class^=col-]:last-child {
+		padding-right: 0;
+	}
+
+	.col-3 {
+		width: 50%;
+	}
+
+	.col-1 {
+		width: 16.6666%;
+	}
+}

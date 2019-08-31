@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kevin Trinh|Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="https://kevintrinh.netlify.com">Portfolio of Kevin Trinh</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html#about-me-h2">About</a></li>
+          <li><a href="index.html#education-h2">Education</a></li>
+          <li class="sub-menu"><a href="cea.html">Engineering </a>
+            <ul>
+              <li><a href="automata.html">Automata Project</a></li>
+              <li><a href="miscellaneous.html">Miscellaneous Page</a></li>
+              <li><a href="dep.html">Design Elements & Principles</a></li>
+              <li><a href="reverse.html">Reverse Engineering Project</a></li>
+              <li><a href="toytrain.html">Toy Train project</a></li>
+              <li><a href="archstyle.html">Architectural styles</a></li>
+              <li><a href="charrette.html">Charrette</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu"><a href="development.html">Development </a>
+            <ul>
+              <li><a href="gamdev.html">Game Development</a></li>
+              <li><a href="apps.html">Applications</a></li>
+            </ul>
+          </li>
+          <li><a href="ci.html">Contact & Info</a></li>
+
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </header>
+
+<section>
+  <article class="resources-sec1">
+    <center>
+      <h2>Website Resources</h2>
+      <p>Images listed here are not owned by me, click on the images to be taken to their sources.</p>
+      <a href="https://cfbdynasty.com/2019-college-football-schedules/2019-houston-cougars-football-schedule/" target="_blank"><img src="img/uh.png" alt="UH" width="25%" height="25%"></a>
+      <a href="#"><img src="" alt=""></a>
+    <center>
+  </article>
+</section>
+
+    <footer>
+      <div class="container">
+        <div class="col-3">
+          <p>Thank you for visiting my portfolio site. The web is being hosted on Netlify. For additional information, please contact
+    me or browse my portfolio as well as viewing the following
+    links within the footer.</p>
+        </div>
+
+        <div class="col-1">
+          <ul class="unstyled-list">
+            <li><strong class="strongones">Useful Links</strong></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="ci.html">Contact Me</a></li>
+            <li><a href="education.html">My Education</a></li>
+          </ul>
+        </div>
+
+        <div class="col-1">
+          <ul class="unstyled-list">
+            <li><strong class="strongones">Useful Links</strong></li>
+            <li><a href="https://www.netlify.com/">Netlify</a></li>
+            <li><a href="https://github.com/KevinTrinh2021">GitHub</a></li>
+            <li><a href="resources.html">Site Details</a></li>
+          </ul>
+        </div>
+    </footer>
+
+    <!--navigator menu java script, do not remove this kevinnnnnnnnnnnnnn----->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(
+        function() {
+          $('.menu-toggle').click(function() {
+            $('nav').toggleClass('active')
+          })
+
+          $('ul li').click(function() {
+            $(this).siblings().removeClass('active');
+            $(this).toggleClass('active');
+          })
+        }
+      )
+
+    </script>
+
+  </body>
+</html>
